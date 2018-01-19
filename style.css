@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    text-align: center;
+}
+
+kbd {
+    border: 1px solid red;
+    width: 4em;
+    height: 4em;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 4em;
+    position: relative;
+}
+
+kbd > button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+kbd:hover > button {
+    display: inline-block;
+}
+
+#keyboard > div:nth-child(2) {
+    margin-left: 2em;
+}
+
+#keyboard > div:nth-child(3) {
+    margin-left: 4em;
+}
+
+.wrapper {
+    display: inline-block;
+}
+
+.wrapper > div {
+    text-align: left;
+}
+
+
+
+
+
+
+
