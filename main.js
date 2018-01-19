@@ -20,7 +20,7 @@ window.onload = function() {
     }
     
     // get hash from local storage
-    var hashInLocalStorage = JSON.parse(localStorage.getItem('newHash') || '');
+    var hashInLocalStorage = JSON.parse(localStorage.getItem('newHash') || 'null');
 
     if (hashInLocalStorage) {
         hash = hashInLocalStorage;
