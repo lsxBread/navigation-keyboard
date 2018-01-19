@@ -7,18 +7,36 @@ a {
     text-decoration: none;
 }
 
+body {
+    height: 100vh;
+    background: gray;
+    background-image: url("./img/background-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 main {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 kbd {
-    border: 1px solid red;
-    width: 4em;
-    height: 4em;
     display: inline-block;
     text-transform: uppercase;
     text-align: center;
-    line-height: 4em;
+    position: relative;
+    margin: 0 6px;
+    width: 50px;
+    height: 40px;
+    background:linear-gradient(to bottom, #292929 0%,#111111 100%);
+    color: #c5c5c5;
+    border-radius: 7px;
+    box-shadow: 0 0 0px 1px #1a1b1c,0 0 0px 2px #1f2020, 0 3px 0 1px rgb(66, 66, 66);
+    font-family: 'Helvetica';
     position: relative;
 }
 
@@ -27,27 +45,58 @@ kbd > button {
     right: 0;
     bottom: 0;
     display: none;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid green;
+    outline: 0px;
 }
 
 kbd:hover > button {
     display: inline-block;
+    
 }
 
 #keyboard > div:nth-child(2) {
-    margin-left: 2em;
+    margin-left: 1em;
+    margin-top: 10px;
+    
 }
 
 #keyboard > div:nth-child(3) {
-    margin-left: 4em;
+    margin-left: 3em;
+    margin-top: 10px;
 }
 
 .wrapper {
     display: inline-block;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
 }
 
 .wrapper > div {
     text-align: left;
 }
+
+kbd img {
+    width: 16px;
+    height: 16px;
+}
+
+kbd .text {
+    position: absolute;
+    left: 4px;;
+    top: 4px;;
+}
+
+kbd img {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+}
+
+
 
 
 
